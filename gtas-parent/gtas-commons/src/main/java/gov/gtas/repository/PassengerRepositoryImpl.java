@@ -47,7 +47,7 @@ public class PassengerRepositoryImpl implements PassengerRepositoryCustom {
     private static final Logger logger = LoggerFactory.getLogger(PassengerRepositoryImpl.class);
 
     @PersistenceContext
-    private EntityManager em;
+    protected EntityManager em;
     
     @Autowired
 	private PassengerService pService;
